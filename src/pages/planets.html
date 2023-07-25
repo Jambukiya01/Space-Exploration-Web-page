@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="stylesheet" href="../index.css">
+    <title>About Space</title>
+    <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/tabs.js" defer></script>
+</head>
+<body class="planets">
+  <header class="primary-header flex">
+    <div>
+      <img src="../assets/shared/logo.png" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../index.html"><span aria-hidden="true">00</span>Home</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="planets.html"><span aria-hidden="true">01</span>planets</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="agencies.html"><span aria-hidden="true">02</span>agencies</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="launch_pads.html"><span aria-hidden="true">03</span>launch_pads</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--planets flow">
+    <h1 class="numbered-title fs-500"><span aria-hidden="true">01</span> About Planets</h1>
+    
+    <picture id="moon-image">
+      <source srcset="../assets/planets/image-moon.webp">
+      <img src="../assets/planets/image-moon.png" >
+    </picture>
+    <picture hidden id="Mercury-image">
+      <source srcset="../assets/planets/image-Mercury.webp" type="image/webp">
+      <img src="../assets/planets/image-Mercury.png" >
+    </picture>
+    <picture hidden id="Earth-image">
+      <source srcset="../assets/planets/image-Earth.webp" type="image/webp">
+      <img src="../assets/planets/image-Earth.png" >
+    </picture>
+    <picture hidden id="Mars-image">
+      <source srcset="../assets/planets/image-Mars.webp" type="image/webp">
+      <img src="../assets/planets/image-Mars.png" >
+    </picture>
+    <picture hidden id="Jupiter-image">
+      <source srcset="../assets/planets/image-Jupiter.webp" type="image/webp">
+      <img src="../assets/planets/image-Jupiter.png" >
+    </picture>
+    <picture hidden id="Saturn-image">
+      <source srcset="../assets/planets/image-Saturn.webp" type="image/webp">
+      <img src="../assets/planets/image-Saturn.png" >
+    </picture>
+    <picture hidden id="Uranus-image">
+      <source srcset="../assets/planets/image-Uranus.webp" type="image/webp">
+      <img src="../assets/planets/image-Uranus.png" >
+    </picture>
+    <picture hidden id="Neptune-image">
+      <source srcset="../assets/planets/image-Neptune.webp" type="image/webp">
+      <img src="../assets/planets/image-Neptune.png" >
+    </picture>
+   
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="planets list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="moon-image">Moon</button>
+        <button aria-selected="false" role="tab" aria-controls="Mercury-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Mercury-image">Mercury</button>
+        <button aria-selected="false" role="tab" aria-controls="Earth-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Earth-image">Earth</button>
+        <button aria-selected="false" role="tab" aria-controls="Mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Mars-image">Mars</button>
+        <button aria-selected="false" role="tab" aria-controls="Jupiter-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Jupiter-image">Jupiter</button>
+        <button aria-selected="false" role="tab" aria-controls="Saturn-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Saturn-image">Saturn</button>
+        <button aria-selected="false" role="tab" aria-controls="Uranus-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Uranus-image">Uranus</button>
+        <button aria-selected="false" role="tab" aria-controls="Neptune-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="Neptune-image">Neptune</button>
+    </div>
+
+    <!-- The moon -->
+    <article class="planets-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Moon</h2>
+      <p>The Moon, Earth's natural satellite, is a rocky, cratered world. It exerts gravitational influence on our planet, causing ocean tides. The Moon's phases, from new to full, result from its orbit around Earth. Human missions have landed on the Moon, revealing valuable scientific data and inspiring exploration of the cosmos.</p>
+      
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">384,400 km</p>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Mercury -->
+    <article hidden class="planets-info flow" id="Mercury-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Mercury</h2>
+      <p>Mercury, the closest planet to the Sun, is a small and rocky world with extreme temperature variations. It lacks a substantial atmosphere, exposing its surface to solar radiation and impacting celestial debris. Its slow rotation leads to long days and nights. NASA's MESSENGER mission provided valuable insights into Mercury's composition and geology, enhancing our understanding of terrestrial planets.</p>
+      
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">77 million km</p>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Earth -->
+    <article hidden class="planets-info flow" id="Earth-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Earth</h2>
+      <p>Earth, our home planet, is the third planet from the Sun in the solar system. It's a diverse world with vast oceans, continents, and a life-supporting atmosphere. The only known planet to sustain life, it orbits the Sun, rotating on its axis, providing the perfect conditions for a rich and diverse biosphere.</p>
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">0 km</p>
+        </div>
+      </div>
+    </article>
+    <!-- Mars -->
+    <article hidden class="planets-info flow" id="Mars-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Mars</h2>
+      <p>Mars, the fourth planet from the Sun, is a cold and dusty world with a thin atmosphere. It features vast deserts, canyons, and the tallest volcano in the solar system, Olympus Mons. Mars has been a prime target for exploration, with rovers and orbiters uncovering evidence of its watery past, fueling curiosity about the potential for life beyond Earth.</p>
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">225 million km</p>
+        </div>
+      </div>
+    </article>
+    <!-- Jupiter -->
+    <article hidden class="planets-info flow" id="Jupiter-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Jupiter</h2>
+      <p>Jupiter, the largest planet in our solar system, is a gas giant composed mostly of hydrogen and helium. Its iconic bands of clouds and the Great Red Spot are prominent features. Jupiter has over 70 known moons, including the four Galilean moons: Io, Europa, Ganymede, and Callisto. Its immense gravity influences the orbits of other planets and protects the inner solar system from some comets and asteroids. Space missions like Juno continue to unveil the secrets of this fascinating planet.</p>
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase"> 778 million km</p>
+        </div>
+    </article>
+    <!-- Saturn -->
+    <article hidden class="planets-info flow" id="Saturn-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Saturn</h2>
+      <p>Saturn, the sixth planet from the Sun, is a gas giant with stunning ring systems made of ice and dust particles. It has over 80 known moons, including Titan, the second-largest moon in the solar system. Saturn's unique hexagonal storm at its north pole and its many fascinating moons, explored by the Cassini mission, have captured the interest of scientists and space enthusiasts alike.</p>
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">1.4 billion km</p>
+        </div>
+      </div>
+    </article>
+    <!-- Uranus -->
+    <article hidden class="planets-info flow" id="Uranus-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Uranus</h2>
+      <p>Uranus, the seventh planet from the Sun, is an ice giant with a unique feature - it rotates on its side. This unusual axial tilt causes extreme seasons and strange magnetic fields. Its atmosphere mainly consists of hydrogen, helium, and methane, which gives it a blue-green hue. Uranus has 27 known moons and a system of faint rings. It remains an intriguing subject of study for scientists exploring the mysteries of our solar system.</p>
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase"> 2.9 billion km</p>
+        </div>
+      </div>
+    </article>
+    <!-- Neptune -->
+    <article hidden class="planets-info flow" id="Neptune-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Neptune</h2>
+      <p>Neptune, the eighth planet from the Sun, is an ice giant with a deep blue atmosphere and the strongest winds in the solar system. Its iconic feature is the Great Dark Spot, a large storm that comes and goes in its atmosphere. Neptune has 14 known moons, including Triton, which orbits in a retrograde direction. This mysterious planet remains an object of fascination for astronomers seeking to understand the far reaches of our solar system.</p>
+      <div class="planets-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">4.5 billion km</p>
+        </div>
+      </div>
+    </article>  
+    </main>
+</body>
+</html>

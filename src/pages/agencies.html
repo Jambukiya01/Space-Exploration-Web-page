@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="stylesheet" href="../index.css">
+    <title>About Space</title>
+    <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/tabs.js" defer></script>
+</head>
+<body class="agencies">
+  <header class="primary-header flex">
+    <div>
+      <img src="../assets/shared/logo.png"  class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav> 
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../index.html"><span aria-hidden="true">00</span>Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="planets.html"><span aria-hidden="true">01</span>planets</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="agencies.html"><span aria-hidden="true">02</span>agencies</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="launch_pads.html"><span aria-hidden="true">03</span>launch_pads</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--agencies flow">
+    <h1 class="numbered-title fs-500"><span aria-hidden="true">02</span> Space Agencies</h1>
+    
+    <div class="dot-indicators flex" role="tablist" aria-label="agencies member list">
+      <button aria-selected="true" aria-controls="NASA-tab" role="tab" data-image="NASA-image" tabindex="0"><span class="sr-only"> NASA</span></button>
+      <button aria-selected="false" aria-controls="ISRO-tab" role="tab" data-image="ISRO-image" tabindex="-1"><span class="sr-only"> ISRO </span></button>
+      <button aria-selected="false" aria-controls="ESA-tab" role="tab" data-image="ESA-image" tabindex="-1"><span class="sr-only"> ESA</span></button>
+      <button aria-selected="false" aria-controls="CNSA-tab" role="tab" data-image="CNSA-image" tabindex="-1"><span class="sr-only"> CNSA</span></button>
+      <button aria-selected="false" aria-controls="JAXA-tab" role="tab" data-image="JAXA-image" tabindex="-1"><span class="sr-only"> JAXA </span></button>
+    </div>
+    
+    <!-- NASA -->
+    <article class="agencies-details flow" id="NASA-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">National Aeronautics and Space Administration - (United States)</h2>
+        <p class="fs-700 uppercase ff-serif">NASA</p>
+      </header>
+      <p>NASA, the National Aeronautics and Space Administration, is the United States' space agency. Founded in 1958, NASA conducts space exploration, scientific research, and aeronautics advancements. Its missions include crewed spaceflights, robotic explorations of other planets, and studying Earth's climate and space phenomena. NASA's achievements have revolutionized our understanding of the universe and inspired global scientific progress.</p>
+    </article> 
+    
+    <!-- ISRO specialist -->
+    <article hidden class="agencies-details flow" id="ISRO-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">Indian Space Research Organisation - (india)</h2>
+        <p class="fs-700 uppercase ff-serif">ISRO</p>
+      </header>
+      <p>ISRO, the Indian Space Research Organisation, is India's space agency established in 1969. It conducts space missions, satellite launches, and space research. ISRO achieved significant milestones like the Mars Orbiter Mission (Mangalyaan) and Chandrayaan missions to the Moon. It aims to advance space technology and benefit humanity through various applications, including communication, Earth observation, and scientific research. ISRO's cost-effective approach and successful missions have earned international recognition and contributed to India's scientific and technological growth.</p>
+    </article> 
+    
+    <!-- ESA -->
+    <article hidden class="agencies-details flow" id="ESA-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">European Space Agency - (European Union)</h2>
+        <p class="fs-700 uppercase ff-serif">ESA</p>
+      </header>
+      <p>ESA, the European Space Agency, is an intergovernmental organization established in 1975. Comprising 22 member states, it conducts space exploration, satellite launches, and scientific research. ESA's missions include Rosetta, which landed a probe on a comet, and the Hubble Space Telescope collaboration. ESA aims to advance European space capabilities, foster international cooperation, and contribute to scientific advancements for the benefit of humanity.</p>
+    </article> 
+    
+    <!-- CNSA -->
+    <article hidden class="agencies-details flow" id="CNSA-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">China National Space Administration - (china)</h2>
+        <p class="fs-700 uppercase ff-serif">CNSA</p>
+      </header>
+      <p>CNSA, the China National Space Administration, is China's national space agency established in 1993. It conducts space exploration, satellite launches, and scientific research. CNSA's missions include the Chang'e lunar program, which landed rovers on the Moon, and the Tianwen-1 mission to Mars. CNSA aims to expand China's space capabilities, foster international collaboration, and explore the mysteries of the cosmos. Its accomplishments have contributed to China's growing prominence in the field of space exploration.</p>
+    </article> 
+
+    <!-- JAXA -->
+    <article hidden class="agencies-details flow" id="JAXA-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">Japan Aerospace Exploration Agency - (japan)</h2>
+        <p class="fs-700 uppercase ff-serif">JAXA</p>
+      </header>
+      <p>JAXA, the Japan Aerospace Exploration Agency, is Japan's national aerospace and space agency established in 2003. It conducts space exploration, satellite launches, and research in aeronautics and space technology. JAXA's missions include Hayabusa, which collected samples from asteroids, and the Kibo module on the International Space Station. JAXA aims to contribute to scientific advancements, enhance Japan's technological capabilities, and promote international cooperation in space exploration. Its achievements have solidified Japan's position as a key player in the global space community.</p>
+    </article> 
+    
+    
+    <picture id="NASA-image">
+      <source srcset="../assets/agencies/image-NASA.webp" type="image/webp">
+      <img src="../assets/agencies/image-NASA.png" alt="NASA">
+    </picture>
+    <picture hidden id="ISRO-image">
+      <source srcset="../assets/agencies/image-ISRO.webp" type="image/webp">
+      <img src="../assets/agencies/image-ISRO.png" alt="ISRO">
+    </picture>
+    <picture hidden id="ESA-image">
+      <source srcset="../assets/agencies/image-ESA.webp" type="image/webp">
+      <img src="../assets/agencies/image-ESA.png" alt="ESA">
+    </picture>
+    <picture hidden id="CNSA-image">
+      <source srcset="../assets/agencies/image-CNSA.webp" type="image/webp">
+      <img src="../assets/agencies/image-CNSA.png" alt="CNSA">
+    </picture>
+    <picture hidden id="JAXA-image">
+      <source srcset="../assets/agencies/image-JAXA.webp" type="image/webp">
+      <img src="../assets/agencies/image-JAXA.png" alt="JAXA">
+    </picture>
+  </main>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="stylesheet" href="../index.css">
+    <title>About Space</title>
+    <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/btn.js" defer></script>
+</head>
+<body class="launch_pads">
+  <header class="primary-header flex">
+    <div>
+      <img src="../assets/shared/logo.png" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="../index.html"><span aria-hidden="true">00</span>Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="planets.html"><span aria-hidden="true">01</span>planets</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="agencies.html"><span aria-hidden="true">02</span>agencies</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="launch_pads.html"><span aria-hidden="true">03</span>launch_pads</a>
+        </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid-container grid-container--launch_pads flow">
+    <h1 class="numbered-title fs-500"><span aria-hidden="true">03</span> Space launch 101</h1>
+    
+    <div class="numbers-indicators flex" role="tablist" aria-label="launch_pads member list">
+      <button aria-selected="true" aria-controls="Kennedy-tab" role="tab" data-image="Kennedy-image" tabindex="0"><span class="ff-serif">1</span></button>
+      <button aria-selected="false" aria-controls="Baikonur-tab" role="tab" data-image="Baikonur-image" tabindex="-1"><span class="ff-serif">2</span></button>
+      <button aria-selected="false" aria-controls="Guiana-tab" role="tab" data-image="Guiana-image" tabindex="-1"><span class="ff-serif">3</span></button>
+      <button aria-selected="false" aria-controls="Tanegashima-tab" role="tab" data-image="Tanegashima-image" tabindex="-1"><span class="ff-serif">4</span></button>
+      <button aria-selected="false" aria-controls="Vandenberg-tab" role="tab" data-image="Vandenberg-image" tabindex="-1"><span class="ff-serif">5</span></button>
+    </div>
+    
+    <!-- Kennedy Space Center -->
+    <article class="launch_pads-details flow" id="Kennedy-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+            <p class="fs-700 uppercase ff-serif">Kennedy Space Center</p>
+      </header>
+      <p>The Kennedy Space Center (KSC) is a major spaceport and launch facility located on Merritt Island, Florida, USA. Established in 1962, it has been the primary launch site for NASA's crewed space missions, including the historic Apollo moon landings and the Space Shuttle program. KSC continues to be used for various space missions, including satellite launches and resupply missions to the International Space Station (ISS). It serves as a hub for space exploration, scientific research, and the advancement of space technology. The center also features visitor complexes where the public can learn about space history and witness rocket launches.</p>
+    </article>
+
+    <!-- Baikonur Cosmodrome -->
+    <article class="launch_pads-details flow" id="Baikonur-tab" role="tabpanel" tabindex="0" hidden>
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif">Baikonur Cosmodrome</p>
+      </header>
+      <p>The Baikonur Cosmodrome is the world's oldest and largest operational space launch facility. Located in Kazakhstan, it was originally built by the Soviet Union and has been used for various space missions since its establishment in 1955. Baikonur has been the launch site for numerous historic missions, including the first human spaceflight by Yuri Gagarin in 1961. It continues to be a crucial spaceport, used by Russia for launching crewed missions, satellites, and interplanetary missions. Baikonur's historical significance and continued activity make it an iconic symbol of human space exploration.</p>
+    </article>
+
+    <!-- Guiana Space Centre -->
+    <article class="launch_pads-details flow" id="Guiana-tab" role="tabpanel" tabindex="0" hidden>
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif">Guiana Space Centre</p>
+      </header>
+      <p>The Guiana Space Centre (Centre Spatial Guyanais) is a spaceport located in French Guiana, a French overseas department in South America. It is operated by the European Space Agency (ESA) and Arianespace. The spaceport is strategically situated near the equator, which provides a significant advantage for launching satellites into geostationary orbit. The Guiana Space Centre is used for launching various rockets, including the Ariane, Soyuz, and Vega, making it a vital launch site for European space missions and international commercial satellite launches. Its reliability, flexibility, and geographical location have made it a key player in the global space launch industry.</p>
+    </article>
+    <!-- Tanegashima Space Center -->
+    <article class="launch_pads-details flow" id="Tanegashima-tab" role="tabpanel" tabindex="0" hidden>
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif">Tanegashima Space Center</p>
+      </header>
+      <p>The Tanegashima Space Center is a major spaceport in Japan, operated by the Japan Aerospace Exploration Agency (JAXA). Located on Tanegashima Island, it was established in 1969 and has been the launch site for various satellite launches and interplanetary missions. Tanegashima has played a crucial role in Japan's space program, including missions like the Hayabusa asteroid missions and satellite deployments. The center's strategic location, advanced facilities, and successful missions have made it a vital asset for Japan's space exploration efforts.</p>
+    </article>
+    <!-- Vandenberg Space Force Base -->
+    <article class="launch_pads-details flow" id="Vandenberg-tab" role="tabpanel" tabindex="0" hidden>
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif">Vandenberg Space Force Base</p>
+      </header>
+      <p>Vandenberg Space Force Base is a spaceport located in California, USA. Originally established as Vandenberg Air Force Base in 1941, it became the first space launch complex for polar orbit missions. It is now operated by the U.S. Space Force. Vandenberg is primarily used for launching polar-orbiting satellites, interplanetary missions, and classified military and defense-related payloads. Its unique location along the Pacific Ocean allows for certain launch trajectories not feasible from other U.S. launch sites. Vandenberg Space Force Base continues to play a vital role in advancing space exploration and national security objectives.</p>
+    </article>
+    
+    <picture id="Kennedy-image" class="landscape">
+      <source srcset="../assets/launch_pads/image-launch-Kennedy-landscape.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-launch-Kennedy-landscape.jpg" >
+    </picture>
+    <picture id="Kennedy-image" class="portrait">
+      <source srcset="../assets/launch_pads/image-launch-Kennedy-portrait.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-launch-Kennedy-portrait.jpg" >
+    </picture>
+    <picture id="Baikonur-image" class="landscape" style="display: none">
+      <source srcset="../assets/launch_pads/image-Baikonur-landscape.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Baikonur-landscape.jpg" >
+    </picture>
+    <picture id="Baikonur-image" class="portrait" style="display: none">
+      <source srcset="../assets/launch_pads/image-Baikonur-portrait.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Baikonur-portrait.jpg" >
+    </picture>
+    <picture id="Guiana-image" class="landscape" style="display: none">
+      <source srcset="../assets/launch_pads/image-Guiana-landscape.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Guiana-landscape.jpg" >
+    </picture>
+    <picture id="Guiana-image" class="portrait" style="display: none">
+      <source srcset="../assets/launch_pads/image-Guiana-portrait.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Guiana-portrait.jpg">
+    </picture>
+    <picture id="Tanegashima-image" class="landscape" style="display: none">
+      <source srcset="../assets/launch_pads/image-Tanegashima-landscape.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Tanegashima-landscape.jpg" >
+    </picture>
+    <picture id="Tanegashima-image" class="portrait" style="display: none">
+      <source srcset="../assets/launch_pads/image-Tanegashima-portrait.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Tanegashima-portrait.jpg" >
+    </picture>
+    <picture id="Vandenberg-image" class="landscape" style="display: none">
+      <source srcset="../assets/launch_pads/image-Vandenberg-landscape.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Vandenberg-landscape.jpg" >
+    </picture>
+    <picture id="Vandenberg-image" class="portrait" style="display: none">
+      <source srcset="../assets/launch_pads/image-Vandenberg-portrait.jpg" type="image/jpg">
+      <img src="../assets/launch_pads/image-Vandenberg-portrait.jpg" >
+    </picture>
+  </main>
+</body>
+</html>
